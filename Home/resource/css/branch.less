@@ -1,0 +1,317 @@
+@import "./common/reset.less";
+//品牌样式st
+.brandcontent{
+  border: 1px solid #ccc;
+  width: 530px;
+  margin: 20px;
+  .new_search_box {
+    overflow: hidden;
+    .sl-key {
+      color: #333;
+      float: left;
+      overflow: hidden;
+      white-space: nowrap;
+      width: 45px;
+      font-size: 14px;
+      height: 24px;
+      padding-top: 10px;
+    }
+  }
+  .dl-cat-list {
+    width: 100%;
+    li {
+      height: 30px;
+      display: inline-block;
+      float: left;
+      width: 70px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      width: 120px;
+      color: #444444;
+      font-size: 14px;
+      text-decoration: none;
+      a {
+        color: #444444;
+        &:hover{
+          color: #009edb;
+        }
+      }
+    }
+  }
+  .clear_check_cat3,.clear_check_cat,.clear_check_cat2{
+    color: #009edb;
+    cursor: pointer;
+    width: 38px;
+    font-size: 12px;
+    float: left;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  //单选选
+  .search_brand_off {
+    .brand_buttonShow_div{
+      display: none;
+    }
+    .letter-title{
+      height: 22px;
+      line-height: 22px;
+    }
+    .sl-all {
+      float: left;
+      margin-right: 5px;
+      font-size: 12px;
+      cursor: pointer;
+      width: 39px;
+      height: 15px;
+      line-height: 15px;
+      width: 34px;
+      margin-top:3px ;
+      background-color: #009edb;
+      color: #fff;
+      text-align: center;
+    }
+    .letter-list {
+      float: left;
+      font-size: 14px;
+      li.on {
+        background-color: #009edb;
+        a {
+          color: #fff;
+        }
+      }
+      li {
+        display: inline-block;
+        float: left;
+        width: 13px;
+        height: 22px;
+        font-size: 12px;
+        line-height: 22px;
+        cursor: pointer;
+        color: #9a9a9a;
+        text-align: center;
+        a{
+          &:hover{
+            text-decoration: underline;
+          }
+          font-size: 12px;
+          color: #19759B;
+
+        }
+      }
+    }
+    .search-condition {
+      float: right;
+      a {
+        color: #19759B;
+        font-size: 12px;
+        width: 30px;
+        display: inline-block;
+        border-top:1px solid #d2d2d2;
+        border-right:1px solid #d2d2d2;
+        border-bottom:1px solid #d2d2d2;
+        height: 20px;
+        line-height: 20px;
+        margin: 0px;
+        padding: 0px;
+        text-align: center;
+        float: right;
+      }
+      input {
+        width: 90px;
+        height: 20px;
+        line-height: 20px;
+        display: inline-block;
+        border: 1px solid #d2d2d2;
+        margin: 0px;
+        padding: 0px;
+        float: right;
+      }
+    }
+    .cl{
+      clear: both;
+    }
+    .brand_list {
+      height: 143px;
+      overflow: auto;
+      margin-top: 10px;
+      li{
+        height: 30px;
+        display: inline-block;
+        cursor: pointer;
+        font-size: 14px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        width: 120px;
+        float: left;
+        color: #19759B;
+        a{
+          color: #444;
+        }
+        &:hover{
+          color: #009edb;
+        }
+        input {
+          width: 13px;
+          height: 13px;
+          overflow: hidden;
+          display: none;
+        }
+      }
+    }
+    li.sl-check{
+      float: left;
+    }
+    .selected-brand {
+      display: none;
+      margin: 15px 0 10px 80px;
+      font-size: 14px;
+      color: #333;
+      height: 20px;
+      cursor: pointer;
+      ul{
+        float: left;
+      }
+      .sl-check{
+        margin-right: 15px;
+        color: #19759B;
+        display: inline-block;
+      }
+    }
+    .check-key {
+      float: left;
+    }
+  }
+  .brand_ui_layer{
+    margin-top: 12px;
+  }
+  //多选
+  .more_select_list.search_brand_off{
+    display: none;
+    .brand_buttonShow_div{
+      display: block;
+    }
+   .clear_check_cat3{
+      display: none;
+    }
+    .brand_list{
+      li{
+        &:hover{
+          a{
+            color: #009edb;
+          }
+        }
+      }
+      input {
+        display: inline-block;
+        margin: 0px;
+        background-color: #ffffff;
+        border-color: #a7a7a7;
+      }
+    }
+    .brand_buttonShow_div{
+      text-align: center;
+    }
+    .check-button {
+      color: #ccc;
+      text-align: center;
+      border: 1px solid #ccc;
+      padding: 2px 4px;
+      width: 50px;
+      margin: 15px 8px 5px 0;
+      display: inline-block;
+      font-size: 12px;
+    }
+    .selected-check-button {
+      background-color: #bd1509;
+      color: #fff;
+      text-align: center;
+      border: 1px solid #bd1509;
+      padding: 2px 4px;
+      width: 50px;
+      display: inline-block;
+      cursor: pointer;
+      display: none;
+      font-size: 12px;
+      color: #fff;
+      margin: 15px 5px 5px 0px;
+    }
+    .clear-button {
+      background-color: #F6F6F6;
+      color: #000;
+      text-align: center;
+      border: 1px solid #ccc;
+      padding: 2px 4px;
+      width: 50px;
+      display: inline-block;
+      cursor: pointer;
+      margin: 15px 5px 5px 0;
+      font-size: 12px;
+    }
+  }
+  // 已选条件
+  .clear_check_big_box{
+    overflow: hidden;
+    height: 45px;
+    padding-right: 10px;
+  }
+  .clear_check_box {
+    float: left;
+    width: 730px;
+    ul.clear_check_state {
+      li{
+        float: left;
+        font-size: 14px;
+        margin-right: 10px;
+        border: 1px solid #ccc;
+        color: #444;
+        cursor: pointer;
+        height: 24px;
+        line-height: 24px;
+        margin-top: 10px;
+        display: inline-block;
+        position: relative;
+        white-space: nowrap;
+        border-radius: 2px;
+        background-color: #fff;
+        padding-left: 5px;
+        &:hover {
+          border: 1px solid #009edb;
+          span.on {
+            color: #fff;
+            height: 24px;
+            background-color: #009edb;
+          }
+        }
+        span.on {
+          width: 18px;
+          height: 24px;
+          text-align: center;
+          display: inline-block;
+          margin-left: 3px;
+        }
+      }
+    }
+  }
+  .clear_check {
+    background-color: #F6F6F6;
+    color: #000;
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 2px 4px;
+    width: 80px;
+    float: right;
+    cursor: pointer;
+    font-size: 12px;
+    font-family: "Microsoft Yahei",Arial, Helvetica, sans-serif, "宋体";
+    &:hover {
+      color: #BD1509;
+    }
+  }
+}
+
+//品牌样式end
+
+

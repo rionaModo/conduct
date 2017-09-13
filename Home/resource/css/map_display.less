@@ -1,0 +1,207 @@
+@import "./common/reset.less";
+#container {
+    width: 1600px;
+    height: 960px;
+    margin: 0px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: none;
+}
+.main-content,.container-ledt{
+    width:1600px;
+    height: 960px;
+    margin: 0 auto;
+    position: relative;
+    background-image: url("../images/map_display/bg.png");
+}
+body{
+
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+#container canvas{
+
+
+
+}
+#container .amap-logo,#container .amap-copyright{
+    display: none!important;
+    background-color: inherit!important;
+}
+
+
+.date,.time,.total-order,.today-order{
+    color: #fff;
+    font-size: 14px;
+    font-family:"华文细黑", "微软雅黑", "黑体";
+    position: absolute;
+    width: 240px;
+}
+.total-order,.today-order{
+    display: none;
+}
+.date{
+    top:107px;
+    left: 117px;
+}
+.time{
+    top:144px;
+    left: 117px;
+}
+
+.order-title{
+    width: 115px;
+    text-align: right;
+    display: inline-block;
+}
+.total-order{
+    top:100px;
+    left: 720px;
+}
+.today-order{
+    top:120px;
+    left: 720px;
+}
+.order-info{
+    position: absolute;
+    left: 1130px;
+    top:0px;
+    height: 100%;
+    width: 470px;
+    background-repeat: no-repeat;
+    background-image: url("../images/map_display/time.png");
+    background-position: left top;
+}
+.coupon-list-content,.order-list-content{
+    color:#fff;
+    font-family: "Microsoft Yahei", Arial, Helvetica, sans-serif;
+    position: absolute;
+ /*   left: 1053px;*/
+    top:224px;
+    height: 192px;
+    overflow: hidden;
+
+    .icon{
+        width: 6px;
+        height: 6px;
+        border-radius: 6px;
+        background-color: #fff;
+        display: inline-block;
+        margin-right: 15px;
+        margin-left: 4px;
+    }
+    .tansf{
+        width: 16px;
+        height: 14px;
+        background-image: url("../images/map_display/yuns.png");
+        display: inline-block;
+        margin-right: 8px;
+
+    }
+    .new{
+        width: 31px;
+        height: 13px;
+        background-image: url("../images/map_display/new.png");
+        display: inline-block;
+        margin-left: 7px;
+        margin-top: 7px;
+    }
+    .rows{
+        font-size: 10px;
+        line-height: 24px;
+        height: 32px;
+        font-weight: 300;
+        .shopName{
+
+        }
+        .status{
+            padding: 0 7px;
+            color: #c5e6ff;
+        }
+        .money{
+            color: #ff7200;
+        }
+    }
+}
+.time-title{
+    width: 42px;
+    display: inline-block;
+}
+.coupon-list-content{
+    top:522px;
+}
+.show-btn{
+    position: absolute;
+    width: 57px;
+    height: 86px;
+    top:0px;
+    left:0px;
+}
+.order-list{
+
+}
+
+.StateTips{
+    display: none;
+}
+.marker-icon{
+    width: 140px;
+    font-family: "Microsoft Yahei", Arial, Helvetica, sans-serif;
+    font-size: 8px;
+    height: 33px;
+    padding-left: 45px;
+    margin-top: 4px;
+    overflow: hidden;
+}
+
+
+
+.market-show{
+    position: absolute;
+    top: 711px;
+    left: 647px;
+    padding-left: 24px;
+    width: 280px;
+   .icon{
+        background-image: url("../images/map_display/mk-icon.png");
+       background-repeat: no-repeat;
+       background-position: left top;
+       width: 17px;
+       height: 17px;
+       position: absolute;
+       top: 0;
+       left: -24px;
+    }
+    .emp-market .icon{
+        background-position: -32px top;
+    }
+    .com-market .icon{
+        background-position: -64px top;
+    }
+    .mk-list{
+        margin-bottom: 15px;
+    }
+    .title{
+        position: relative;
+        margin-bottom: 5px;
+    }
+    .mk-title {
+        font-family:"宋体", "Microsoft Yahei", Arial, Helvetica, sans-serif;
+        color: #c5e6ff;
+        font-size: 14px;
+        font-size: 10px;
+        line-height: 18px;
+    }
+    .last-detail{
+        padding-top: 5px;
+    }
+    .mk-detail{
+        font-family:"宋体", "Microsoft Yahei", Arial, Helvetica, sans-serif;
+        color: #73a1ee;
+        font-size: 8px;
+        line-height: 14px;
+    }
+}
